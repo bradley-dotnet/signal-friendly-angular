@@ -1,0 +1,130 @@
+[
+    {
+        "name": "Flat-Coated Retriever",
+        "apiName": "retriever,flatcoated",
+        "flopEar": true,
+        "highEnergy": true,
+        "longCoat": true,
+        "darkColor": true
+    },
+    {
+        "name": "Golden Retriever",
+        "apiName": "retriever,golden",
+        "flopEar": true,
+        "highEnergy": true,
+        "longCoat": true,
+        "darkColor": false
+    },
+    {
+        "name": "Dalmatian",
+        "apiName": "dalmatian",
+        "flopEar": true,
+        "highEnergy": true,
+        "longCoat": false,
+        "darkColor": false
+    },
+    {
+        "name": "Black & Tan Coonhound",
+        "apiName": "coonhound",
+        "flopEar": true,
+        "highEnergy": true,
+        "longCoat": false,
+        "darkColor": true
+    },
+    {
+        "name": "Border Collie",
+        "apiName": "collie,border",
+        "flopEar": false,
+        "highEnergy": true,
+        "longCoat": true,
+        "darkColor": true
+    },
+    {
+        "name": "Belgian Malinois",
+        "apiName": "malinois",
+        "flopEar": false,
+        "highEnergy": true,
+        "longCoat": false,
+        "darkColor": true
+    },
+    {
+        "name": "Fox Terrier",
+        "apiName": "terrier,fox",
+        "flopEar": false,
+        "highEnergy": true,
+        "longCoat": false,
+        "darkColor": false
+    },
+    {
+        "name": "Pomeranian",
+        "apiName": "pomeranian",
+        "flopEar": false,
+        "highEnergy": true,
+        "longCoat": true,
+        "darkColor": false
+    },
+    {
+        "name": "Newfoundland",
+        "apiName": "newfoundland",
+        "flopEar": true,
+        "highEnergy": false,
+        "longCoat": true,
+        "darkColor": true
+    },
+    {
+        "name": "Dachshund",
+        "apiName": "dachshund",
+        "flopEar": true,
+        "highEnergy": false,
+        "longCoat": false,
+        "darkColor": true
+    },
+    {
+        "name": "Pekinese",
+        "apiName": "pekinese",
+        "flopEar": true,
+        "highEnergy": false,
+        "longCoat": true,
+        "darkColor": false
+    },
+    {
+        "name": "Basset Hound",
+        "apiName": "hound,basset",
+        "flopEar": true,
+        "highEnergy": false,
+        "longCoat": false,
+        "darkColor": false
+    },
+    {
+        "name": "English Bulldog",
+        "apiName": "bulldog,english",
+        "flopEar": false,
+        "highEnergy": false,
+        "longCoat": false,
+        "darkColor": false
+    },
+    {
+        "name": "American Eskimo",
+        "apiName": "eskimo",
+        "flopEar": false,
+        "highEnergy": false,
+        "longCoat": true,
+        "darkColor": false
+    },
+    {
+        "name": "Scottish Terrier",
+        "apiName": "terrier,scottish",
+        "flopEar": false,
+        "highEnergy": false,
+        "longCoat": true,
+        "darkColor": true
+    },
+    {
+        "name": "Chihuahua",
+        "apiName": "chihuahua",
+        "flopEar": false,
+        "highEnergy": false,
+        "longCoat": false,
+        "darkColor": true
+    }
+]
