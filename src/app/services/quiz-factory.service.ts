@@ -1,9 +1,7 @@
 import { Inject, Injectable } from '@angular/core';
 import { Question, QuestionFactory } from './questions/question-factory.interface';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class QuizFactoryService {
 
   // inject function lacks good multi-provider support

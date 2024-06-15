@@ -4,11 +4,15 @@ import { CoatQuestionFactoryService } from '../services/questions/coat-question-
 import { ColorQuestionFactoryService } from '../services/questions/color-question-factory.service';
 import { EarQuestionFactoryService } from '../services/questions/ear-question-factory.service';
 import { EnergyQuestionFactoryService } from '../services/questions/energy-question-factory.service';
+import { QuizStore } from '../services/quiz.store';
+import { QuizFactoryService } from '../services/quiz-factory.service';
 
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
   providers: [
+    QuizStore,
+    QuizFactoryService,
     { provide: QuestionFactory, useClass: CoatQuestionFactoryService, multi: true },
     { provide: QuestionFactory, useClass: ColorQuestionFactoryService, multi: true },
     { provide: QuestionFactory, useClass: EarQuestionFactoryService, multi: true },
