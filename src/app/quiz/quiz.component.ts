@@ -10,6 +10,7 @@ import { QuizFactoryService } from '../services/quiz-factory.service';
 @Component({
   selector: 'app-quiz',
   templateUrl: './quiz.component.html',
+  standalone: true,
   providers: [
     QuizStore,
     QuizFactoryService,
