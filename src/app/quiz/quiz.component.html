@@ -1,1 +1,5 @@
-<p>quiz works!</p>
+@if(store.questions().length) {
+    <app-question [question]="store.questions()[0]"/>
+} @else {
+    <app-result [winner]="store.breeds()[0]"/>
+}

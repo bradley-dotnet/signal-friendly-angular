@@ -6,23 +6,22 @@ import { Answer, Question } from './questions/question-factory.interface';
 import { Breed } from '../model/breed.interface';
 import { DogDataService } from './dog-data.service';
 import { QuizFactoryService } from './quiz-factory.service';
-interface QuizState {
-    questions: Question[];
-    remainingBreeds: Breed[];
-}
+import { QuizUpdaterService } from './quiz-updater.service';
+import { QuizState } from './quiz-state.interface';
+
 
 export const QuizStore = signalStore(
     withState<QuizState>({
         questions: [],
-        remainingBreeds: []
+        breeds: []
     }),
-    withMethods((store, data = inject(DogDataService), quizFactory = inject(QuizFactoryService)) => ({
+    withMethods((store, data = inject(DogDataService), quizFactory = inject(QuizFactoryService), updater = inject(QuizUpdaterService)) => ({
         loadBreeds: rxMethod<void>(pipe(
             switchMap(() => data.getBreeds()),
-            tap(breeds => patchState(store, { remainingBreeds: breeds}))
+            tap(breeds => patchState(store, { breeds: breeds}))
         )),
         getQuestions: () => patchState(store, { questions: quizFactory.createQuiz()}),
-        handleAnswer: (answer: Answer) => patchState(store, { remainingBreeds: answer.filter(store.remainingBreeds())})
+        handleAnswer: (question: Question, answer: Answer) => patchState(store, state => updater.updateQuiz(state, question, answer))
     })),
     withHooks((store) => ({
         onInit: () => {

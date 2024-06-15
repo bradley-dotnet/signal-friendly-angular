@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Breed } from '../model/breed.interface';
 
 @Component({
   selector: 'app-result',
@@ -6,11 +7,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './result.component.html',
   styleUrls: ['./result.component.scss']
 })
-export class ResultComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class ResultComponent {
+  public winner = input.required<Breed>();
 }

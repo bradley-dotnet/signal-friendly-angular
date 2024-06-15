@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, input } from '@angular/core';
+import { Question } from '../services/questions/question-factory.interface';
 
 @Component({
   selector: 'app-question',
@@ -6,11 +7,6 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './question.component.html',
   styleUrls: ['./question.component.scss']
 })
-export class QuestionComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+export class QuestionComponent {
+  public question = input.required<Question>();
 }
