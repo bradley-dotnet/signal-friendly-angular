@@ -18,7 +18,7 @@ describe('DogImageService', () => {
       take(1)
     ).subscribe(result => {
       expect(result).toEqual('imgUrl');
-      expect(httpSpy.get).toHaveBeenCalledWith('https://https://dog.ceo/api/breed/dachshund/images/random');
+      expect(httpSpy.get).toHaveBeenCalledWith('https://dog.ceo/api/breed/dachshund/images/random');
       done();
     });
   });
@@ -29,7 +29,7 @@ describe('DogImageService', () => {
       take(1)
     ).subscribe(result => {
       expect(result).toEqual('imgUrl');
-      expect(httpSpy.get).toHaveBeenCalledWith('https://https://dog.ceo/api/breed/collie/border/images/random');
+      expect(httpSpy.get).toHaveBeenCalledWith('https://dog.ceo/api/breed/collie/border/images/random');
       done();
     });
   });

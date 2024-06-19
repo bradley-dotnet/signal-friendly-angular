@@ -37,6 +37,6 @@ describe('QuizFactoryService', () => {
     const quiz = service.createQuiz();
     const secondQuiz = service.createQuiz();
 
-    expect(!quiz.every((factory, index) => secondQuiz[index] === factory));
+    expect(quiz.every((factory, index) => secondQuiz[index] === factory)).toBeFalse();
   });
 });

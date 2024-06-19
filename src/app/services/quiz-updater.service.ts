@@ -11,6 +11,7 @@ export class QuizUpdaterService {
     const questionIndex = state.questions.indexOf(question);
     const updatedQuestions = [...state.questions];
     updatedQuestions.splice(questionIndex, 1);
+
     return {
       questions: updatedQuestions,
       breeds: answer.filter(state.breeds)

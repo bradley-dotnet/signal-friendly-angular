@@ -11,6 +11,6 @@ export class DogDataService {
   constructor(private http: HttpClient) { }
 
   public getBreeds(): Observable<Breed[]> {
-    return this.http.get<Breed[]>('/assets/breeds.json');
+    return this.http.get<Breed[]>('/assets/data/breeds.json');
   }
 }

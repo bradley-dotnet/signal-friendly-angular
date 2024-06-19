@@ -12,7 +12,7 @@ export class QuizFactoryService {
     const quiz: Question[] = [];
     
     while (deck.length) {
-      const draw = Math.random() % deck.length;
+      const draw = Math.floor(Math.random() * deck.length);
       quiz.push(...deck.splice(draw, 1));
     }
 
