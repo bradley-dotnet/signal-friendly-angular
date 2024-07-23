@@ -8,7 +8,6 @@ import { QuizFactoryService } from './quiz-factory.service';
 import { QuizUpdaterService } from './quiz-updater.service';
 import { QuizState } from './quiz-state.interface';
 
-
 export const QuizStore = signalStore(
     withState<QuizState>({
         questions: [],
